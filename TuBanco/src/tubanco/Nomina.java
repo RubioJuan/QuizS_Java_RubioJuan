@@ -8,6 +8,8 @@ package tubanco;
  *
  * @author Juan Felipe Rubio
  */
-public class Nomina {
-    
+class Nomina extends TuBanco {
+    public Nomina(String nombre, int edad, String telefono, String numeroDeCuenta, double valorApertura, String mes) {
+        super(nombre, edad, telefono, numeroDeCuenta, valorApertura, mes);
+    }
 }

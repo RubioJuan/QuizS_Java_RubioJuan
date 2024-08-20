@@ -8,6 +8,9 @@ package tubanco;
  *
  * @author Juan Felipe Rubio
  */
-public class Cartera {
-    
+public class Cartera{
+    private int numeroDeCuenta;
+    private String cuotaDeManejo;
+    private String tipoDeTarjeta;
+    private String mes;
 }

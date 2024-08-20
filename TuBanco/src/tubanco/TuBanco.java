@@ -8,16 +8,16 @@ package tubanco;
  *
  * @author Juan Felipe Rubio
  */
-public class TuBanco {
+public abstract class TuBanco {
     protected String nombre;
     protected int edad;
-    protected int telefono;
+    protected String telefono;  // Cambiado a String
     protected String numeroDeCuenta;
     protected double valorApertura;
     protected boolean haFinalizado;
     protected String mes;
     
-    public TuBanco(String nombre, int edad, int telefono, String numeroDeCuenta,double valorApertura, String mes){
+    public TuBanco(String nombre, int edad, String telefono, String numeroDeCuenta, double valorApertura, String mes){
         this.nombre = nombre;
         this.edad = edad;
         this.telefono = telefono;
@@ -25,5 +25,10 @@ public class TuBanco {
         this.valorApertura = valorApertura;
         this.mes = mes; 
         this.haFinalizado = false;
+    }
+    
+    public String obtenerInfo(){
+        return String.format("Nombre: %s, Teléfono: %s, Edad: %d, Finalizado: %s",
+                nombre, telefono, edad, haFinalizado ? "Sí" : "No");
     }
 }

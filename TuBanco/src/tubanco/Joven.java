@@ -8,6 +8,9 @@ package tubanco;
  *
  * @author Juan Felipe Rubio
  */
-public class Joven {
-    
+
+public class Joven extends TuBanco {
+    public Joven(String nombre, int edad, String telefono, String numeroDeCuenta, double valorApertura, String mes) {
+        super(nombre, edad, telefono, numeroDeCuenta, valorApertura, mes);
+    }
 }
